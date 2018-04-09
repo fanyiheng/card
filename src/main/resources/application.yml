@@ -1,14 +1,6 @@
 qr-code:
   qrCodeRepository: E://qr-code-repos
   logoRepository: E://qr-code-repos/logo
-  bgRepository: E://qr-code-repos/bg
-
-  cardTemplates:
-    defaultTemplate:
-      render_class: com.bx.card.render.DefaultCardRender
-      bg_img: bx_bg.jpg
-      head_img: bx_hd.png
-      user_name_key: user_name
 
 spring:
   mvc:
