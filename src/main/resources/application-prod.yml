@@ -1,0 +1,12 @@
+qr-code:
+  qrCodeRepository: /data/wwwroot/e-card/filedir
+  logoRepository: /data/wwwroot/e-card/filedir/logo
+
+spring:
+  mvc:
+    static-path-pattern: /**
+  resources:
+    static-locations: classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/,file:${qr-code.qrCodeRepository}/
+
+logging:
+  config: classpath:logback-prod.xml
