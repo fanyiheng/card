@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 
 @ControllerAdvice
 @Slf4j
-public class PostcardExceptionHandler {
+public class CardExceptionHandler {
 
     @ExceptionHandler(value = QrCodeCardException.class)
     public Result<String> handleSellException(QrCodeCardException e) {
